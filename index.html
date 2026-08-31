@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Museo Web de la Evolución Gráfica - Un recorrido histórico por la computación visual y el color." />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>De los Números a los Mundos Virtuales · Museo Web de la Evolución Gráfica</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header>
+      <nav aria-label="Navegación principal">
+        <a href="#evolucion">Evolución</a>
+        <a href="#aplicacion">Aplicación</a>
+        <a href="#laboratorio">Color</a>
+        <a href="#algoritmo">Algoritmo</a>
+        <a href="#fuentes">Fuentes</a>
+      </nav>
+    </header>
+    <main id="contenido">
+      <section class="hero">
+        <h1>De los Números a los Mundos Virtuales</h1>
+        <p>La graficación por computadora es la rama de la informática dedicada a generar, procesar y manipular imágenes utilizando hardware y software especializado, transformando datos abstractos en información visual interactiva con la que podemos trabajar y jugar en tiempo real.</p>
+        <p>Autor: Eric Jared Torres Diaz</p>
+      </section>
+
+      <section id="evolucion">
+        <h2>Cinco momentos de la evolución</h2>
+        
+        <article>
+          <h3>1. Primeros sistemas: La imagen como salida</h3>
+          <p><strong>Limitación anterior:</strong> Las primeras computadoras solo entregaban resultados numéricos a través de tarjetas perforadas o largos listados impresos, haciendo imposible interpretar información espacial o geométrica rápidamente.</p>
+          <p><strong>Cambio técnico:</strong> Se adaptaron los tubos de rayos catódicos (CRT) y se desarrollaron trazadores mecánicos (plotters) para dibujar puntos y líneas mediante coordenadas.</p>
+          <p><strong>Impacto:</strong> Los operadores pudieron visualizar la información en tiempo real, transformando datos abstractos en mapas y gráficos visibles.</p>
+          <p><strong>Ejemplo actual:</strong> La pantalla de mi laptop al momento de escribir y compilar código en mis clases del Tecnológico de Colima.</p>
+          <!-- Imagen: Fotografía de consola Whirlwind CRT -->
+        </article>
+
+        <article>
+          <h3>2. 1963 Sketchpad: Dibujos geométricos interactivos</h3>
+          <p><strong>Limitación anterior:</strong> Aunque existían las pantallas y lápices ópticos, la computadora no comprendía las relaciones geométricas, por lo que era imposible editar figuras estructurales de forma interactiva.</p>
+          <p><strong>Cambio técnico:</strong> Ivan Sutherland creó Sketchpad, el cual sincronizó el lápiz óptico con la pantalla usando programación orientada a objetos para aplicar reglas matemáticas y reconocer figuras.</p>
+          <p><strong>Impacto:</strong> Permitió a ingenieros diseñar, alterar y guardar planos directamente en la pantalla, sentando las bases del software de Diseño Asistido por Computadora (CAD).</p>
+          <p><strong>Ejemplo actual:</strong> Programas modernos como AutoCAD o usar un Apple Pencil en un iPad para dibujar vectores.</p>
+          <!-- Imagen: Fotografía de Ivan Sutherland operando Sketchpad en el TX-2 -->
+        </article>
+
+        <article>
+          <h3>3. Años 70s-80s: Imágenes rasterizadas</h3>
+          <p><strong>Limitación anterior:</strong> Los sistemas vectoriales eran perfectos para líneas, pero no podían almacenar los detalles complejos, sombras ni transiciones de color de una fotografía del mundo real.</p>
+          <p><strong>Cambio técnico:</strong> Se adoptó el formato de mapa de bits (rasterizado), donde la imagen se guarda como una densa cuadrícula y a cada punto (píxel) se le asigna un color específico.</p>
+          <p><strong>Impacto:</strong> Las computadoras lograron digitalizar y mostrar fotografías realistas, permitiendo alterar los colores píxel por píxel.</p>
+          <p><strong>Ejemplo actual:</strong> Editar una foto en Adobe Photoshop usando la herramienta del pincel o el borrador.</p>
+          <!-- Imagen: Gráfico comparativo entre vector (curvas limpias) y rasterizado (cuadros de píxeles) -->
+        </article>
+
+        <article>
+          <h3>4. Años 90s: Gráficos en tiempo real y GPUs</h3>
+          <p><strong>Limitación anterior:</strong> Los procesadores centrales (CPU) ejecutaban tareas secuencialmente, lo que era muy lento para recalcular millones de píxeles y generaba retrasos severos en imágenes interactivas 3D.</p>
+          <p><strong>Cambio técnico:</strong> El desarrollo de Unidades de Procesamiento Gráfico (GPU) con arquitecturas de procesamiento paralelo para hacer miles de cálculos visuales simultáneos.</p>
+          <p><strong>Impacto:</strong> Permitió la actualización de entornos 3D en milisegundos, haciendo posibles las simulaciones fluidas y la interacción precisa sin pausas.</p>
+          <p><strong>Ejemplo actual:</strong> Jugar títulos pesados como Mortal Kombat X o Fortnite; mi laptop con una RTX 3050 renderiza las acciones y combates instantáneamente sin latencia.</p>
+          <!-- Imagen: Ilustración técnica comparando la arquitectura de procesamiento en serie de una CPU vs procesamiento paralelo de GPU -->
+        </article>
+
+        <article>
+          <h3>5. Década 2010s: Gráficos nativos en el navegador</h3>
+          <p><strong>Limitación anterior:</strong> Los navegadores no podían renderizar entornos interactivos por sí solos, obligando al usuario a instalar complementos externos (como Flash) que eran inestables y pesados.</p>
+          <p><strong>Cambio técnico:</strong> Se introdujeron estándares como el elemento Canvas de HTML5 y la API WebGL, los cuales permiten al navegador comunicarse directamente con el hardware gráfico.</p>
+          <p><strong>Impacto:</strong> La web se volvió una plataforma capaz de ejecutar software de diseño y videojuegos tridimensionales instantáneamente, sin descargas adicionales.</p>
+          <p><strong>Ejemplo actual:</strong> Herramientas como Figma usando Canvas, o navegar por Google Earth en 3D directamente desde Google Chrome.</p>
+          <!-- Imagen: Interfaz de un modelo 3D cargando fluidamente dentro de una pestaña de navegador web -->
+        </article>
+      </section>
+
+      <section id="aplicacion">
+        <h2>Una aplicación real: Planificador de rutas</h2>
+        <p><strong>Usuario principal:</strong> Una persona a pie que necesita caminar hacia un destino en la ciudad.</p>
+        <p><strong>Problema a resolver:</strong> Elegir la ruta peatonal más directa sin perderse, calculando primero la distancia y el tiempo estimado para planificar su salida.</p>
+        <p><strong>Datos de entrada:</strong> La ubicación de origen (por GPS o texto), el punto de destino y el medio de transporte (modo caminar).</p>
+        <p><strong>Representación visual:</strong> Un mapa base de tonos neutros donde destaca la ruta óptima con una línea gruesa azul. El origen es un punto azul y el destino un marcador rojo; las rutas alternativas se ven en gris claro.</p>
+        <p><strong>Decisión que facilita:</strong> El usuario puede comparar los caminos, elegir la mejor opción según su tiempo, y pulsar "Iniciar" para comenzar la navegación paso a paso.</p>
+      </section>
+
+      <section id="laboratorio">
+        <h2>Laboratorio de color</h2>
+        
+        <article>
+          <h3>Experimento 1: Canales igualados (Acromáticos)</h3>
+          <p><strong>Predicción:</strong> Cuando iguale los tres canales RGB, el máximo y mínimo serán idénticos, por lo que el delta será cero y la saturación bajará al 0% al no haber un color dominante.</p>
+          <p><strong>Datos:</strong> Al probar Negro (0,0,0) el delta es 0 y HSV es (0°, 0%, 0%). Al probar Blanco (255,255,255), el delta es 0 y HSV es (0°, 0%, 100%).</p>
+          <p><strong>Conclusión basada en valores:</strong> La evidencia confirma que al igualar los canales, el delta siempre es 0, anulando la saturación (0%). El tono queda indefinido (0°), y lo único que varía es el componente de brillo (V).</p>
+        </article>
+
+        <article>
+          <h3>Experimento 2: Acercamiento de canales</h3>
+          <p><strong>Predicción:</strong> Si mantengo el rojo estático y subo los demás, el Tono y el Valor se conservarán, pero la Saturación cambiará cayendo al acercarse al gris.</p>
+          <p><strong>Datos:</strong> Con RGB(128, 0, 0), V era 50.2% y S era 100%. Con RGB(128, 64, 64), V se mantuvo en 50.2% pero la Saturación cayó al 50%.</p>
+          <p><strong>Conclusión basada en valores:</strong> La intensidad (V) se mantiene igual porque el canal máximo nunca cambió. Sin embargo, al subir los canales mínimos (G y B), el delta se acortó a la mitad, provocando que la saturación cayera drásticamente.</p>
+        </article>
+
+        <article>
+          <h3>Experimento 3: Diferencia entre Valor (HSV) y Luminosidad (HSL)</h3>
+          <p><strong>Predicción:</strong> En un color desequilibrado como RGB(64, 128, 192), anticipo que HSV y HSL arrojarán distintos porcentajes de brillo porque se calculan diferente.</p>
+          <p><strong>Datos:</strong> El laboratorio mostró un Valor (V) de 75.3%, pero una Luminosidad (L) de apenas 50.2% para el mismo color.</p>
+          <p><strong>Conclusión basada en valores:</strong> V y L son distintos porque V solo se fija en el canal máximo (192 = 75.3%), ignorando el resto. L, en cambio, promedia el máximo y el mínimo ((192+64)/2), lo que arrastra la lectura de luz hacia abajo por culpa del canal oscuro.</p>
+        </article>
+      </section>
+
+      <section id="algoritmo">
+        <h2>De la fórmula al algoritmo</h2>
+        <p>Para traducir los colores de la computadora a formato HSV, primero se realiza una <strong>normalización</strong> dividiendo los valores R, G y B entre 255 para pasarlos a una escala del 0 al 1. Luego encontramos el canal más fuerte (<strong>máximo</strong>) y el más débil (<strong>mínimo</strong>). La resta entre el máximo y el mínimo nos da el <strong>delta</strong>. Para manejar el <strong>caso acromático</strong> (grises, negro, blanco), validamos que si delta es igual a 0, automáticamente asignamos Saturación y Tono en 0 para evitar errores matemáticos de división entre cero.</p>
+        <pre><code>function convertRGBtoHSV(r, g, b) {
+  // Normalización
+  const red = r / 255;
+  const green = g / 255;
+  const blue = b / 255;
+
+  let h = 0;
+  let s = 0;
+  let v = 0;
+
+  const cmax = Math.max(red, green, blue);
+  const cmin = Math.min(red, green, blue);
+  const delta = cmax - cmin;
+
+  // Cálculo de Valor
+  v = cmax * 100;
+
+  // Cálculo de Saturación validando división por cero
+  if (cmax !== 0) {
+    s = (delta / cmax) * 100;
+  } else {
+    s = 0;
+  }
+
+  // Cálculo de Tono manejando ramas y caso acromático
+  if (delta === 0) {
+    h = 0;
+  } else if (cmax === red) {
+    h = 60 * (((green - blue) / delta) % 6);
+  } else if (cmax === green) {
+    h = 60 * (((blue - red) / delta) + 2);
+  } else if (cmax === blue) {
+    h = 60 * (((red - green) / delta) + 4);
+  }
+
+  if (h < 0) {
+    h += 360; // Ajuste para cuadrante negativo
+  }
+
+  // Redondeo final a 1 decimal para porcentajes y entero para grados
+  h = Math.round(h);
+  s = Math.round(s * 10) / 10;
+  v = Math.round(v * 10) / 10;
+
+  return [h, s, v];
+}</code></pre>
+      </section>
+
+      <section id="glosario">
+        <h2>Glosario</h2>
+        <dl>
+          <dt>1. Píxel</dt>
+          <dd>La unidad mínima o bloque más pequeño que forma una imagen en una pantalla. Ejemplo: Al hacer mucho zoom en una foto en Photoshop, se ven los cuadros individuales.</dd>
+
+          <dt>2. Vector</dt>
+          <dd>Una figura definida por fórmulas matemáticas y coordenadas en lugar de píxeles, lo que le permite escalarse infinitamente sin perder calidad. Ejemplo: Un logo diseñado en Illustrator.</dd>
+
+          <dt>3. GPU</dt>
+          <dd>Un procesador dedicado exclusivamente a calcular y generar gráficos rápidamente trabajando de forma paralela. Ejemplo: La tarjeta gráfica de mi laptop encargada de procesar mis videojuegos.</dd>
+
+          <dt>4. Resolución</dt>
+          <dd>La cantidad total de píxeles que contiene una imagen o pantalla, lo que define su nivel de detalle y nitidez. Ejemplo: Un monitor 1080p que cuenta con 1920 píxeles de ancho y 1080 de alto.</dd>
+
+          <dt>5. Renderizado</dt>
+          <dd>El proceso mediante el cual la computadora procesa datos o código para generar la imagen final que veremos en pantalla. Ejemplo: Los instantes en que un videojuego carga los detalles del mapa a mi alrededor.</dd>
+
+          <dt>6. Modelo RGB</dt>
+          <dd>Sistema aditivo que crea toda su gama de colores mezclando niveles de luz Roja, Verde y Azul. Ejemplo: El modelo nativo que utilizan todas las pantallas modernas.</dd>
+
+          <dt>7. Tono (Hue)</dt>
+          <dd>El color puro o la base cromática en sí, representado en grados a lo largo de un círculo. Ejemplo: El color rojo se sitúa en los 0° y el azul en los 240°.</dd>
+
+          <dt>8. Saturación</dt>
+          <dd>La intensidad o pureza de un color; define qué tan lejos está de convertirse en un tono grisáceo o deslavado. Ejemplo: Un rojo vivo y fuerte tiene 100% de saturación.</dd>
+
+          <dt>9. Valor / Luminosidad</dt>
+          <dd>La cantidad de luz o claridad presente en un color, determinando qué tan brillante u oscuro se percibe. Ejemplo: Un color con 0% de Valor se verá completamente negro.</dd>
+
+          <dt>10. Interfaz de Usuario (UI)</dt>
+          <dd>El conjunto de elementos gráficos mediante los cuales interactuamos con un software. Ejemplo: Los menús, el mapa y los botones trazados sobre la pantalla en la app del navegador GPS.</dd>
+        </dl>
+      </section>
+
+      <section id="conclusion">
+        <h2>Conclusión</h2>
+        <p>Antes pensaba que el "brillo" de un color era una propiedad universal y que los modelos HSV y HSL simplemente usaban nombres distintos (Valor y Luminosidad) para representar exactamente el mismo nivel de luz de una misma imagen. La evidencia obtenida en el laboratorio al medir colores asimétricos (como RGB 64, 128, 192) cambió mi idea porque comprobé matemáticamente que ambas propiedades dependen de fórmulas distintas: el Valor (V) solo toma en cuenta la intensidad del canal máximo (mostrando 75.3%), mientras que la Luminosidad (L) promedia los canales máximo y mínimo, lo que arrastra su cálculo hacia la oscuridad (mostrando 50.2%). La graficación requiere de gran precisión matemática para simular lo que nuestros ojos perciben naturalmente.</p>
+      </section>
+
+      <section id="fuentes">
+        <h2>Fuentes y créditos</h2>
+        <ol>
+          <li>Computer History Museum. "Timeline of Computer History: Graphics & Games". Consultado durante el proyecto de investigación. URL: https://computerhistory.org/timeline/graphics-games/</li>
+          <li>Adobe Creative Cloud. "Diferencias entre gráficos vectoriales y rasterizados". Consultado durante el proyecto de investigación. URL: https://www.adobe.com/la/creativecloud/design/discover/vector-vs-raster.html</li>
+          <li>NVIDIA Blog. "¿Qué es una GPU?". Consultado durante el proyecto de investigación. URL: https://blogs.nvidia.com/blog/what-is-a-gpu/</li>
+          <li>Mozilla Developer Network (MDN). "Documentación de WebGL API". Consultado durante el proyecto de investigación. URL: https://developer.mozilla.org/es/docs/Web/API/WebGL_API</li>
+          <li>Soporte de Google. "Obtener instrucciones y mostrar rutas en Google Maps". Consultado durante el proyecto de investigación. URL: https://support.google.com/maps/answer/144339?hl=es</li>
+          <li>Plantilla base y estilos proporcionados en el recurso "starter-museo.zip"[cite: 1, 2, 3].</li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <p>Eric Jared Torres Diaz · Ingeniería en Sistemas Computacionales · Tecnológico de Colima</p>
+    </footer>
+  </body>
+</html>
