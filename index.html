@@ -94,21 +94,55 @@
         <article>
           <h3>Experimento 1: Canales igualados (Acromáticos)</h3>
           <p><strong>Predicción:</strong> Cuando iguale los tres canales RGB, el máximo y mínimo serán idénticos, por lo que el delta será cero y la saturación bajará al 0% al no haber un color dominante.</p>
-          <p><strong>Datos:</strong> Al probar Negro (0,0,0) el delta es 0 y HSV es (0°, 0%, 0%). Al probar Blanco (255,255,255), el delta es 0 y HSV es (0°, 0%, 100%).</p>
+          <p><strong>Datos:</strong></p>
+          <div class="color-demo">
+            <div class="color-box" style="background-color: rgb(0, 0, 0); color: white;">
+              <span class="color-name">Negro absoluto</span>
+              <code>RGB: 0, 0, 0</code>
+              <code>HSV: 0°, 0%, 0%</code>
+            </div>
+            <div class="color-box" style="background-color: rgb(255, 255, 255); color: black;">
+              <span class="color-name">Blanco absoluto</span>
+              <code>RGB: 255, 255, 255</code>
+              <code>HSV: 0°, 0%, 100%</code>
+            </div>
+          </div>
           <p><strong>Conclusión basada en valores:</strong> La evidencia confirma que al igualar los canales, el delta siempre es 0, anulando la saturación (0%). El tono queda indefinido (0°), y lo único que varía es el componente de brillo (V).</p>
         </article>
 
         <article>
           <h3>Experimento 2: Acercamiento de canales</h3>
           <p><strong>Predicción:</strong> Si mantengo el rojo estático y subo los demás, el Tono y el Valor se conservarán, pero la Saturación cambiará cayendo al acercarse al gris.</p>
-          <p><strong>Datos:</strong> Con RGB(128, 0, 0), V era 50.2% y S era 100%. Con RGB(128, 64, 64), V se mantuvo en 50.2% pero la Saturación cayó al 50%.</p>
+          <p><strong>Datos:</strong></p>
+          <div class="color-demo">
+            <div class="color-box" style="background-color: rgb(128, 0, 0); color: white;">
+              <span class="color-name">Rojo oscuro</span>
+              <code>RGB: 128, 0, 0</code>
+              <code>Saturación: 100%</code>
+              <code>Valor: 50.2%</code>
+            </div>
+            <div class="color-box" style="background-color: rgb(128, 64, 64); color: white;">
+              <span class="color-name">Rojo deslavado</span>
+              <code>RGB: 128, 64, 64</code>
+              <code>Saturación: 50%</code>
+              <code>Valor: 50.2%</code>
+            </div>
+          </div>
           <p><strong>Conclusión basada en valores:</strong> La intensidad (V) se mantiene igual porque el canal máximo nunca cambió. Sin embargo, al subir los canales mínimos (G y B), el delta se acortó a la mitad, provocando que la saturación cayera drásticamente.</p>
         </article>
 
         <article>
           <h3>Experimento 3: Diferencia entre Valor (HSV) y Luminosidad (HSL)</h3>
           <p><strong>Predicción:</strong> En un color desequilibrado como RGB(64, 128, 192), anticipo que HSV y HSL arrojarán distintos porcentajes de brillo porque se calculan diferente.</p>
-          <p><strong>Datos:</strong> El laboratorio mostró un Valor (V) de 75.3%, pero una Luminosidad (L) de apenas 50.2% para el mismo color.</p>
+          <p><strong>Datos:</strong></p>
+          <div class="color-demo">
+            <div class="color-box" style="background-color: rgb(64, 128, 192); color: white;">
+              <span class="color-name">Azul acero</span>
+              <code>RGB: 64, 128, 192</code>
+              <code>Valor (HSV): 75.3%</code>
+              <code>Luminosidad (HSL): 50.2%</code>
+            </div>
+          </div>
           <p><strong>Conclusión basada en valores:</strong> V y L son distintos porque V solo se fija en el canal máximo (192 = 75.3%), ignorando el resto. L, en cambio, promedia el máximo y el mínimo ((192+64)/2), lo que arrastra la lectura de luz hacia abajo por culpa del canal oscuro.</p>
         </article>
       </section>
