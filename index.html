@@ -44,7 +44,7 @@
           <p><strong>Cambio técnico:</strong> Ivan Sutherland creó Sketchpad, el cual sincronizó el lápiz óptico con la pantalla usando programación orientada a objetos para aplicar reglas matemáticas y reconocer figuras.</p>
           <p><strong>Impacto:</strong> Permitió a ingenieros diseñar, alterar y guardar planos directamente en la pantalla, sentando las bases del software de Diseño Asistido por Computadora (CAD).</p>
           <p><strong>Ejemplo actual:</strong> El diseño industrial y arquitectónico mediante software como AutoCAD o SolidWorks, donde cada línea y polígono es una entidad matemática editable.</p>
-          <img src="sketchpad.JPG" alt="Fotografía de Ivan Sutherland operando Sketchpad directamente sobre la pantalla de la computadora TX-2 con un lápiz óptico" loading="lazy">
+          <img src="sketchpad.jpg" alt="Fotografía de Ivan Sutherland operando Sketchpad directamente sobre la pantalla de la computadora TX-2 con un lápiz óptico" loading="lazy">
           <p><strong>Fuente:</strong> <a href="https://www.computerhistory.org/timeline/1963/" target="_blank" rel="noopener noreferrer">Computer History Museum</a></p>
         </article>
 
@@ -84,7 +84,30 @@
         <p><strong>Usuario principal:</strong> Una persona a pie que necesita caminar hacia un destino en la ciudad.</p>
         <p><strong>Problema a resolver:</strong> Elegir la ruta peatonal más directa sin perderse, calculando primero la distancia y el tiempo estimado para planificar su salida.</p>
         <p><strong>Datos de entrada:</strong> La ubicación de origen (por GPS o texto), el punto de destino y el medio de transporte (modo caminar).</p>
-        <p><strong>Representación visual:</strong> Un mapa base de tonos neutros donde destaca la ruta óptima con una línea gruesa azul. El origen es un punto azul y el destino un marcador rojo; las rutas alternativas se ven en gris claro.</p>
+        
+        <!-- MOCKUP DEL MAPA -->
+        <div class="map-mockup">
+          <div class="map-grid"></div>
+          
+          <!-- Rutas trazadas con SVG Vectorial -->
+          <svg class="map-route" viewBox="0 0 400 200" preserveAspectRatio="none">
+            <!-- Ruta alternativa gris -->
+            <path d="M 50,150 C 120,160 180,90 250,90 S 320,60 350,50" fill="transparent" stroke="#475569" stroke-width="4" stroke-dasharray="5,5" />
+            <!-- Ruta principal azul -->
+            <path d="M 50,150 C 80,100 150,50 250,80 S 300,50 350,50" fill="transparent" stroke="#3b82f6" stroke-width="6" stroke-linecap="round" />
+          </svg>
+
+          <!-- Marcadores UI -->
+          <div class="marker origin"></div>
+          <div class="marker destination"></div>
+
+          <!-- Tarjeta de información -->
+          <div class="map-ui-card">
+            <span class="ui-title">📍 Destino óptimo</span>
+            <span class="ui-time">15 min <small>(1.2 km)</small></span>
+          </div>
+        </div>
+
         <p><strong>Decisión que facilita:</strong> El usuario puede comparar los caminos, elegir la mejor opción según su tiempo, y pulsar "Iniciar" para comenzar la navegación paso a paso.</p>
       </section>
 
